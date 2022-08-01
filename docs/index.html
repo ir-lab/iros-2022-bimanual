@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A System for Imitation Learning of Contact-Rich Bimanual Manipulation Policies">
+    <meta name="keywords" content="Bimanual, Manipulation, IROS 2022">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bimanual Manipulation</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://simonstepputtis.com">
+                    <span class="icon">
+               <i class="fas fa-home"></i>
+               </span>
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                  More Research
+                  </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://interactive-robotics.engineering.asu.edu/interaction-primitives/">
+                     Interaction Primitives
+                     </a>
+                        <a class="navbar-item" href="https://simonstepputtis.com/neurips-2020-lcim/">
+                     Language Conditioned Imitation Learning
+                     </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">A System for Imitation Learning of Contact-Rich Bimanual Manipulation Policies</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                        <a href="https://simonstepputtis.com">Simon Stepputtis</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                            Maryam Bandari<sup>2</sup>,</span>
+                            <span class="author-block">
+                            Stefan Schaal<sup>2</sup>,
+                        </span>
+                            <span class="author-block">
+                        <a href="http://henibenamor.weebly.com/">Heni Ben Amor</a><sup>3</sup>
+                        </span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Carnegie Melon University,</span>
+                            <span class="author-block"><sup>2</sup>Intrinsic, An Alphabet Company,</span>
+                            <span class="author-block"><sup>3</sup>Arizona State University</span>
+                        </div>
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                           <a href="#"
+                              class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                           <i class="fas fa-file-pdf"></i>
+                           </span>
+                                <span>Paper</span>
+                                </a>
+                                </span>
+                                <!-- arXiv -->
+                                <span class="link-block">
+                           <a href="#"
+                              class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                           <i class="ai ai-arxiv"></i>
+                           </span>
+                                <span>arXiv</span>
+                                </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                           <a href="#"
+                              class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                           <i class="fab fa-youtube"></i>
+                           </span>
+                                <span>Video</span>
+                                </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                           <a href="https://github.com/ir-lab/iros-2022-bimanual"
+                              class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                           <i class="fab fa-github"></i>
+                           </span>
+                                <span>Code</span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            In this paper, we discuss a framework for teaching bimanual manipulation tasks by imitation.
+                        </p>
+                        <p>
+                            To this end, we present a system and algorithms for learning compliant and contact-rich robot behavior from human demonstrations. The presented system combines insights from admittance control and machine learning to extract control policies that can
+                            (a) recover from and adapt to a variety of disturbances in time and space, while also (b) effectively leveraging physical contact with the environment.
+                        </p>
+                        <p>
+                            We demonstrate the effectiveness of our approach using a real-world insertion task involving multiple simultaneous contacts between a manipulated object and insertion pegs. We also investigate efficient means of collecting training data for such bimanual
+                            settings. To this end, we conduct a human-subject study and analyze the effort and mental demand as reported by the users. Our experiments show that, while harder to provide, the additional force/torque information available
+                            in teleoperated demonstrations is crucial for phase estimation and task success. Ultimately, force/torque data substantially improves manipulation robustness, resulting in a 90\% success rate in a multipoint insertion task.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+        </div>
+    </section>
+
+    <!-- <section class="section">
+        <div class="container is-max-widescreen">
+
+            <div class="rows">
+
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dcliport">Bimanual Manipulation</span></h2>
+
+                        <h3 class="title is-4">Approach</h3>
+                        <div class="content has-text-justified">
+                            <p>
+                                In this paper, we present a system for imitation learning of compliant bimanual manipulation policies. We describe a robotic setup in which human demonstrations of the task are recorded across a variety of sensing modalities. The setup leverages principles
+                                of admittance control to enable contact-rich and dynamic demonstrations without the risk of collisions, damage or wear-and-tear. In turn, the recorded data is used to learn Interaction Primitives which encode the demonstrated
+                                behavior in time and space. At runtime, interaction primitives are used to identify the temporal task progress as a function of external perturbations, as well as the optimal robot response to these perturbations and environmental
+                                conditions. In cases where physical perturbations affect task execution, the robot is able to account for it by performing corrective actions in either time or space. Since the presented approach is Bayesian in nature,
+                                it allows for powerful spatio-temporal inference from multimodal datastreams.
+                            </p>
+                        </div>
+                        <img src="./static/images/picture_sequence.png" class="interpolation-image" alt="System Overview">
+                        <br><br>
+                        <div class="content has-text-justified">
+                            <p>
+                              
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{stepputtis2022bimanual,
+  author    = {Stepputtis, Simon and Bandari, Maryam and Schaal, Stefan and Ben Amor, Heni},
+  title     = {A System for Imitation Learning of Contact-Rich Bimanual Manipulation Policies},
+  journal   = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year      = {2022},
+}</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> made by <a href="https://keunhong.com/">Keunhong Park</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
