@@ -194,15 +194,7 @@
                                 and spatial progress of the insertion task in terms of a phase value \(\phi\). This phase \(0 \leq \phi \leq 1\) describes the progress of the task, allowing us to represent varying trajectory lengths in the real world
                                 on a unified scale. The phase estimation is key to enabling temporal inference over the task progress to appropriately react to perturbations.
                             </p>
-                            <p>
-                                When misalignments or other external perturbations are detected, the phase estimation, together with the underlying admittance controller, are used to overcome obstructions. This allows the system to correct and even reverse the estimated task progress,
-                                resulting in multiple insertion attempts. At its core, the combination of phase estimation and adaptive admittance control enables smooth insertions, as shown in the videos above.
-                            </p>
-                            <p>
-                                To train the bayesian interaction primitive, we collect thirty demonstrations in the real world by moving the bracket, either with a space mouse, allowing for six-dimensional manipulation, or by utilizing kinesthetic teaching.
-                            </p>
                         </div>
-
                         <!-- <section class="section"> -->
                         <div class="container is-max-desktop">
 
@@ -211,43 +203,85 @@
                                 <!-- Visual Effects. -->
                                 <div class="column">
                                     <div class="content">
-                                        <h2 class="title is-5">Teleoperation (Space-Mouse)</h2>
-                                        <!-- <p>
-                                                When teleoperating with a Space-Mouse, users need to initially familiarize themselves with the control; however, all force/torque sensor data can be attributed to the interaction with the environment and be used during inference.
-                                            </p> -->
-                                        <img src="static/assets/spacemouse.gif" alt="Teleoperation" width="100%">
+                                        <h2 class="title is-5">Phase Estimation During Perturbation</h2>
+                                        <img src="static/assets/phase.gif" alt="Phase Estimation" width="100%">
+                                        <p>
+                                            When exposed to external perturbations or facing difficulties during the insertion, the phase estimate \(\phi\) is continuously adjusted.
+                                        </p>
                                     </div>
                                 </div>
                                 <!--/ Visual Effects. -->
 
                                 <!-- Matting. -->
                                 <div class="column">
-                                    <h2 class="title is-5">Kinesthetic Teaching</h2>
+                                    <h2 class="title is-5">Motion Consistency</h2>
                                     <div class="columns is-centered">
                                         <div class="column content">
-                                            <!-- <p>
-                                                    Using kinesthetic teaching, users report more intuitive maneuvering; however, force/torque sensor data are used to enable the kinesthetic teaching and can thus not be used during inference.
-                                                </p> -->
-                                            <img src="static/assets/kinesthetic.gif" alt="Kinesthetic Teaching" width="100%">
+                                            <img src="static/assets/phase_joints.gif" alt="Motion Consistency" width="100%">
+                                            <p>
+                                                When the phase \(\phi\) is adjusted by the algorithm, predicted motions remain in a similar motion domain, even when pused outside of demonstrated behavior.
+                                            </p>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                             <!--/ Matting. -->
-                            <br>
                             <div class="content has-text-justified">
                                 <p>
-                                    In our user study, we show that kinesthetic teaching is preferred due to its intuitive maneuvering; however, data collected with the space mouse enables the usage of force/torque sensor data during inference since all measured disturbances can be attributed
-                                    to interactions with the environment. Especially the availability of force/torque sensor data has been shown to provide a 20% improvement in task performance. Overall, when using force/torque data, our system acheives
-                                    a 90% success rate.
+                                    When misalignments or other external perturbations are detected, the phase estimation, together with the underlying admittance controller, are used to overcome obstructions. This allows the system to correct and even reverse the estimated task progress,
+                                    resulting in multiple insertion attempts. At its core, the combination of phase estimation and adaptive admittance control enables smooth insertions, as shown in the videos above.
                                 </p>
+                                <p>
+                                    To train the bayesian interaction primitive, we collect thirty demonstrations in the real world by moving the bracket, either with a space mouse, allowing for six-dimensional manipulation, or by utilizing kinesthetic teaching.
+                                </p>
+                            </div>
+
+                            <!-- <section class="section"> -->
+                            <div class="container is-max-desktop">
+
+                                <div class="columns is-centered">
+
+                                    <!-- Visual Effects. -->
+                                    <div class="column">
+                                        <div class="content">
+                                            <h2 class="title is-5">Teleoperation (Space-Mouse)</h2>
+                                            <!-- <p>
+                                                When teleoperating with a Space-Mouse, users need to initially familiarize themselves with the control; however, all force/torque sensor data can be attributed to the interaction with the environment and be used during inference.
+                                            </p> -->
+                                            <img src="static/assets/spacemouse.gif" alt="Teleoperation" width="100%">
+                                        </div>
+                                    </div>
+                                    <!--/ Visual Effects. -->
+
+                                    <!-- Matting. -->
+                                    <div class="column">
+                                        <h2 class="title is-5">Kinesthetic Teaching</h2>
+                                        <div class="columns is-centered">
+                                            <div class="column content">
+                                                <!-- <p>
+                                                    Using kinesthetic teaching, users report more intuitive maneuvering; however, force/torque sensor data are used to enable the kinesthetic teaching and can thus not be used during inference.
+                                                </p> -->
+                                                <img src="static/assets/kinesthetic.gif" alt="Kinesthetic Teaching" width="100%">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Matting. -->
+
+                                <br>
+                                <div class="content has-text-justified">
+                                    <p>
+                                        In our user study, we show that kinesthetic teaching is preferred due to its intuitive maneuvering; however, data collected with the space mouse enables the usage of force/torque sensor data during inference since all measured disturbances can be attributed
+                                        to interactions with the environment. Especially the availability of force/torque sensor data has been shown to provide a 20% improvement in task performance. Overall, when using force/torque data, our system acheives
+                                        a 90% success rate.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="section" id="BibTeX">
