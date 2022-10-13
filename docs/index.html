@@ -19,6 +19,8 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -34,20 +36,20 @@
             <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
                 <a class="navbar-item" href="https://simonstepputtis.com">
                     <span class="icon">
-               <i class="fas fa-home"></i>
-               </span>
+                        <i class="fas fa-home"></i>
+                    </span>
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
-                  More Research
-                  </a>
+                        More Research
+                    </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item" href="https://interactive-robotics.engineering.asu.edu/interaction-primitives/">
-                     Interaction Primitives
-                     </a>
+                            Interaction Primitives
+                        </a>
                         <a class="navbar-item" href="https://simonstepputtis.com/neurips-2020-lcim/">
-                     Language Conditioned Imitation Learning
-                     </a>
+                            Language Conditioned Imitation Learning
+                        </a>
                     </div>
                 </div>
             </div>
@@ -61,15 +63,15 @@
                         <h1 class="title is-1 publication-title">A System for Imitation Learning of Contact-Rich Bimanual Manipulation Policies</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                        <a href="https://simonstepputtis.com">Simon Stepputtis</a><sup>1</sup>,</span>
+                                <a href="https://simonstepputtis.com">Simon Stepputtis</a><sup>1</sup>,</span>
                             <span class="author-block">
-                            Maryam Bandari<sup>2</sup>,</span>
+                                Maryam Bandari<sup>2</sup>,</span>
                             <span class="author-block">
-                            Stefan Schaal<sup>2</sup>,
-                        </span>
+                                Stefan Schaal<sup>2</sup>,
+                            </span>
                             <span class="author-block">
-                        <a href="http://henibenamor.weebly.com/">Heni Ben Amor</a><sup>3</sup>
-                        </span>
+                                <a href="http://henibenamor.weebly.com/">Heni Ben Amor</a><sup>3</sup>
+                            </span>
                         </div>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block"><sup>1</sup>Carnegie Melon University,</span>
@@ -80,42 +82,42 @@
                             <div class="publication-links">
                                 <!-- PDF Link. -->
                                 <span class="link-block">
-                           <a href="#"
-                              class="external-link button is-normal is-rounded is-dark">
-                           <span class="icon">
-                           <i class="fas fa-file-pdf"></i>
-                           </span>
-                                <span>Paper</span>
+                                    <a href="https://arxiv.org/pdf/2208.00596.pdf"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                <span>arXiv Paper</span>
                                 </a>
                                 </span>
-                                <!-- arXiv -->
+                                <!-- Teaser Video Link. -->
                                 <span class="link-block">
-                           <a href="#"
-                              class="external-link button is-normal is-rounded is-dark">
-                           <span class="icon">
-                           <i class="ai ai-arxiv"></i>
-                           </span>
-                                <span>arXiv</span>
+                                    <a href="https://youtu.be/yElviO6vtV0"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                <span>Teaser Video</span>
                                 </a>
                                 </span>
-                                <!-- Video Link. -->
+                                <!-- Presentation Video Link. -->
                                 <span class="link-block">
-                           <a href="#"
-                              class="external-link button is-normal is-rounded is-dark">
-                           <span class="icon">
-                           <i class="fab fa-youtube"></i>
-                           </span>
-                                <span>Video</span>
+                                    <a href="https://youtu.be/eLGUmv46I30"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                <span>Presentation</span>
                                 </a>
                                 </span>
                                 <!-- Code Link. -->
                                 <span class="link-block">
-                           <a href="https://github.com/ir-lab/iros-2022-bimanual"
-                              class="external-link button is-normal is-rounded is-dark">
-                           <span class="icon">
-                           <i class="fab fa-github"></i>
-                           </span>
-                                <span>Code</span>
+                                    <a href="https://github.com/ir-lab/iros-2022-bimanual"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                <span>Library Code</span>
                                 </a>
                                 </span>
                             </div>
@@ -129,6 +131,17 @@
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Introduction Video (3 Minutes)</h2>
+                    <div class="publication-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yElviO6vtV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/ Paper video. -->
+
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Abstract</h2>
@@ -138,7 +151,7 @@
                         </p>
                         <p>
                             To this end, we present a system and algorithms for learning compliant and contact-rich robot behavior from human demonstrations. The presented system combines insights from admittance control and machine learning to extract control policies that can
-                            (a) recover from and adapt to a variety of disturbances in time and space, while also (b) effectively leveraging physical contact with the environment.
+                            (a) recover from and adapt to a variety of disturbances in time and space while also (b) effectively leveraging physical contact with the environment.
                         </p>
                         <p>
                             We demonstrate the effectiveness of our approach using a real-world insertion task involving multiple simultaneous contacts between a manipulated object and insertion pegs. We also investigate efficient means of collecting training data for such bimanual
@@ -152,8 +165,8 @@
         </div>
     </section>
 
-    <!-- <section class="section">
-        <div class="container is-max-widescreen">
+    <section class="section">
+        <div class="container is-max-desktop content">
 
             <div class="rows">
 
@@ -161,29 +174,81 @@
                     <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dcliport">Bimanual Manipulation</span></h2>
 
+                        <h3 class="title is-4">Full IROS 2022 Presentation (7 Minutes)</h3>
+                        <div class="content has-text-justified">
+                            <!-- Paper Presentation. -->
+                            <div class="columns is-centered has-text-centered">
+                                <div class="column is-four-fifths">
+                                    <div class="publication-video">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eLGUmv46I30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Paper Presentation. -->
+                        </div>
+
                         <h3 class="title is-4">Approach</h3>
                         <div class="content has-text-justified">
                             <p>
-                                In this paper, we present a system for imitation learning of compliant bimanual manipulation policies. We describe a robotic setup in which human demonstrations of the task are recorded across a variety of sensing modalities. The setup leverages principles
-                                of admittance control to enable contact-rich and dynamic demonstrations without the risk of collisions, damage or wear-and-tear. In turn, the recorded data is used to learn Interaction Primitives which encode the demonstrated
-                                behavior in time and space. At runtime, interaction primitives are used to identify the temporal task progress as a function of external perturbations, as well as the optimal robot response to these perturbations and environmental
-                                conditions. In cases where physical perturbations affect task execution, the robot is able to account for it by performing corrective actions in either time or space. Since the presented approach is Bayesian in nature,
-                                it allows for powerful spatio-temporal inference from multimodal datastreams.
+                                In our approach, we combine multimodal sensor data acquired from force/torque sensors attached to each robot's wrist, visual object tracking, and robot joint states to learn a Bayesian Interaction Primitive. The learned model then infers the temporal
+                                and spatial progress of the insertion task in terms of a phase value \(\phi\). This phase \(0 \leq \phi \leq 1\) describes the progress of the task, allowing us to represent varying trajectory lengths in the real world
+                                on a unified scale. The phase estimation is key to enabling temporal inference over the task progress to appropriately react to perturbations.
+                            </p>
+                            <p>
+                                When misalignments or other external perturbations are detected, the phase estimation, together with the underlying admittance controller, are used to overcome obstructions. This allows the system to correct and even reverse the estimated task progress,
+                                resulting in multiple insertion attempts. At its core, the combination of phase estimation and adaptive admittance control enables smooth insertions, as shown in the videos above.
+                            </p>
+                            <p>
+                                To train the bayesian interaction primitive, we collect thirty demonstrations in the real world by moving the bracket, either with a space mouse, allowing for six-dimensional manipulation, or by utilizing kinesthetic teaching.
                             </p>
                         </div>
-                        <img src="./static/images/picture_sequence.png" class="interpolation-image" alt="System Overview">
-                        <br><br>
-                        <div class="content has-text-justified">
-                            <p>
-                              
-                            </p>
+
+                        <!-- <section class="section"> -->
+                        <div class="container is-max-desktop">
+
+                            <div class="columns is-centered">
+
+                                <!-- Visual Effects. -->
+                                <div class="column">
+                                    <div class="content">
+                                        <h2 class="title is-5">Teleoperation (Space-Mouse)</h2>
+                                        <!-- <p>
+                                                When teleoperating with a Space-Mouse, users need to initially familiarize themselves with the control; however, all force/torque sensor data can be attributed to the interaction with the environment and be used during inference.
+                                            </p> -->
+                                        <img src="static/assets/spacemouse.gif" alt="Teleoperation">
+                                    </div>
+                                </div>
+                                <!--/ Visual Effects. -->
+
+                                <!-- Matting. -->
+                                <div class="column">
+                                    <h2 class="title is-5">Kinesthetic Teaching</h2>
+                                    <div class="columns is-centered">
+                                        <div class="column content">
+                                            <!-- <p>
+                                                    Using kinesthetic teaching, users report more intuitive maneuvering; however, force/torque sensor data are used to enable the kinesthetic teaching and can thus not be used during inference.
+                                                </p> -->
+                                            <img src="static/assets/kinesthetic.gif" alt="Kinesthetic Teaching">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Matting. -->
+                            <br>
+                            <div class="content has-text-justified">
+                                <p>
+                                    In our user study, we show that kinesthetic teaching is preferred due to its intuitive maneuvering; however, data collected with the space mouse enables the usage of force/torque sensor data during inference since all measured disturbances can be attributed
+                                    to interactions with the environment. Especially the availability of force/torque sensor data has been shown to provide a 20% improvement in task performance. Overall, when using force/torque data, our system acheives
+                                    a 90% success rate.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
